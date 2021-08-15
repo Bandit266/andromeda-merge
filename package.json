@@ -11,9 +11,9 @@
         "client2": "webpack-dev-server --open",
 		"server2": "cd server && node server.js",
 		"startS": "cd server && node server.js",
-		"startC": "webpack-dev-server --open",
-		"start": "start npm run startS && start npm run startC",
-		"dev": "start npm run startS && start npm run startC"
+		"startC": "webpack-dev-server",
+		"start": "npm run startS && npm run startC",
+		"dev": "npm run startS && npm run startC"
     },
     "dependencies": {
         "formik": "^1.5.2",
