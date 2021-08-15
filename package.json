@@ -2,6 +2,7 @@
     "name": "react-jwt-authentication-example",
     "version": "1.0.0",
     "repository": {
+		"main": "index.js",
         "type": "git",
         "url": "https://github.com/cornflourblue/react-jwt-authentication-example.git"
     },
@@ -12,8 +13,11 @@
 		"server2": "cd server && node server.js",
 		"startS": "cd server && node server.js",
 		"startC": "webpack-dev-server",
-		"start": "npm run startS && npm run startC",
-		"dev": "npm run startS && npm run startC"
+		"start5": "npm run startS && npm run startC",
+		"dev5": "npm run startS && npm run startC",
+		"dev": "webpack serve",
+		"start": "node server.js",
+		"build": "webpack --mode production"
     },
     "dependencies": {
         "formik": "^1.5.2",
@@ -39,6 +43,7 @@
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "@babel/preset-react": "^7.0.0",
+		"@webpack-cli/serve": "^1.0.1",
         "babel-loader": "^8.0.5",
         "html-webpack-plugin": "^3.2.0",
         "path": "^0.12.7",
